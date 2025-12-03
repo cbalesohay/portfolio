@@ -1,29 +1,20 @@
-//buttonScript.js
+const introText = "My name is Chris, welcome to my portfolio website for CS210";
+let index = 0;
 
+function typeIntroText() {
+    const target = document.getElementById('typeIntro');
 
-
-const listOfEl = ['hello', 'bye', 'yes', 'no'];
-
-const addParagraph = () => {
-    const el = document.createElement('p')
-    el.textContent = 'Paragraph';
-    document.querySelector('.container').appendChild(el);
-}
-
-const removeParagraph = () => {
-    const el = document.createElement('p')
-    el.textContent = 'Paragraph';
-    const len = document.querySelector('.container').children.length
-    const child = document.querySelector('.container').children[len - 1];
-
-    document.querySelector('.container').removeChild(child);
-}
-
-const displayList = () => {
-    for (i = 0; i < listOfEl.length; i++){
-        const el = document.createElement('p')
-        const text = document.createTextNode(listOfEl[i]);
-        el.appendChild(text);
-        document.querySelector('.container').appendChild(el);
+    if (index < introText.length) {
+        target.textContent += introText.charAt(index);
+        index++;
+        setTimeout(typeIntroText, 60);
+    } else {
+        setTimeout(() => {
+            target.textContent = '';
+            index = 0;
+            typeIntroText();
+        }, 2500);
     }
 }
+
+typeIntroText();

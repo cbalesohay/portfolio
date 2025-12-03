@@ -1,10 +1,90 @@
-button{
-    background-color: navy;
-    color:white;
-    height: 30px;
-    border-radius: 5px;
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: #F5F7FA;
+    color: #1F2937;
 }
-button:hover{
-    cursor: pointer;
-    opacity: 0.8;
+
+header {
+    background: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E7EB;
+    position: sticky;
+    top: 0;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+header li {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+header a {
+    font-size: 15px;
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.introSection {
+    padding: 100px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.introTextSection {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.projectSection {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #F5F7FA;
+}
+
+.projectBox {
+    background: #ffffff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.projectBox h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.projectImg {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.footerSection {
+    background: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    color: #4B5563;
+}
+
+.footerSection a {
+    color: #2563EB;
+    text-decoration: none;
 }
