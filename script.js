@@ -1,3 +1,8 @@
+/**
+ * Chris Bailey
+ * Javascript for html page, this will load the intro as a type writter
+ */
+
 const introText = "My name is Chris, welcome to my portfolio website for CS210";
 let index = 0;
 
